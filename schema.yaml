@@ -1,0 +1,12 @@
+REQUIRED_CLASS_FOLDERS:
+  - Coccidiosis
+  - Healthy
+ 
+VALID_IMAGE_EXTENSIONS:
+  - .jpg
+  - .jpeg
+  - .png
+  - .bmp
+ 
+MIN_IMAGES_PER_CLASS: 10    # Alert if any class has fewer than this many images
+IMAGE_SIZE: [224, 224]      # Expected dimensions after preprocessing

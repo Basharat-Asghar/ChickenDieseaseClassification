@@ -1,0 +1,9 @@
+stages:
+ 
+  data_ingestion:
+    cmd: python main.py  # In practice you'd call individual stage scripts
+    deps:
+      - src/ChickenDiseaseClassifier/components/data_ingestion.py
+      - config/config.yaml
+    outs:
+      - artifacts/data_ingestion/data

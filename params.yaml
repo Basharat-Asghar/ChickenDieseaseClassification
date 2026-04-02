@@ -1,0 +1,11 @@
+AUGMENTATION: True
+IMAGE_SIZE:
+  - 224    # height
+  - 224    # width
+  - 3      # channels (RGB)
+BATCH_SIZE: 16
+INCLUDE_TOP: False       # VGG16: exclude the final ImageNet classifier head
+EPOCHS: 3
+CLASSES: 4               # Coccidiosis, Healthy, Newcastle, Salmonella
+WEIGHTS: imagenet        # Pre-trained weights for transfer learning
+LEARNING_RATE: 0.01
