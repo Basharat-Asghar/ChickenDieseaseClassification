@@ -132,7 +132,7 @@ class DataIngestion:
                     sys
                 )
  
-            logger.info("Extracting %s → %s", zip_file_path, unzip_path)
+            logger.info("Extracting %s -> %s", zip_file_path, unzip_path)
  
             with zipfile.ZipFile(zip_file_path, "r") as zip_ref:
                 # ── Validate archive integrity before extracting ───────────

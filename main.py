@@ -3,6 +3,7 @@ from ChickenDiseaseClassifier.utils.logger import get_logger
 from ChickenDiseaseClassifier.utils.exception import CustomException
 
 from ChickenDiseaseClassifier.pipeline.stage_01_data_ingestion import DataIngestionPipeline
+from ChickenDiseaseClassifier.pipeline.stage_02_data_validation import DataValidationPipeline
 
 logger = get_logger(__name__)
 
@@ -36,3 +37,4 @@ def run_stage(stage_name: str, pipeline_class) -> None:
 
 if __name__ == "__main__":
     run_stage("Data Ingestion", DataIngestionPipeline)
+    run_stage("Data Validation", DataValidationPipeline)
